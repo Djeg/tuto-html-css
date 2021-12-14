@@ -18,23 +18,50 @@ h1 {
   la règle "font-style": détermine si police doit être italique ou non
    */
   font-style: italic;
+
+  /**
+  la règle text-align permet de personaliser l'alignement 
+  de notre text
+  */
+  text-align: justify;
+
+  /*
+  La régle text-decoration permet de souligner, barrer
+  un text
+  */
+  text-decoration: none;
+
+  /*
+  La régle letter-spacing détermine l'espace entre
+  chaques lettres
+  */
+  letter-spacing: 5px;
+
+  /*
+  La régle text-transform permet de mettre en minuscule
+  ou en majuscule
+  */
+  text-transform: lowercase;
+
+  /*
+  Me régle color permet de personaliser la couleur d'un
+  text
+  */
+  color: #477fda;
+
+  /*
+  La régle background-color permet de changer la couleur
+  de fond
+  */
+  background-color: #282641;
 }
 
 p {
   color: green;
 }
 
-h1 {
-  color: red;
-}
-
 header {
   background-color: blue;
-}
-
-h1,
-h2 {
-  background-color: darkgrey;
 }
 
 .tresGrand {
