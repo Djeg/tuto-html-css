@@ -112,3 +112,198 @@ en utilisant la combinaison de touche
 2. Faire la mème chose dans la page `presentation.html`
 3. Ajouter de la même manière un lien vers la page
    `accueil.html`
+
+## Partie 2 - Le CSS
+
+### Exercice 1 - Créer la page d'accueil d'un restaurant
+
+1. Créer, dans un répertoire vide, le fichier html "accueil.html".
+2. Générer dans ce fichier un document html (le doctype, html, head et body)
+3. Changer la balise title du head par "Mon Restaurant - Accueil"
+4. Créer dans ce même répertoire une feuille de style "style.css"
+5. Ajouter cette feuille de style à la page HTML en utilisant
+   la balise `link` (ex: `<link rel="stylesheet" href="chemin/vers/style.css">`)
+6. Placer à l'intérieur de la balise body le HTML suivant :
+
+```html
+<header>
+  <h1>Mon Restaurant</h1>
+  <nav>
+    <ul>
+      <li><a href="#presentation">Présentation</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#map">Ou sommes-nous</a></li>
+      <li><a href="#contact">Nous contacter</a></li>
+    </ul>
+  </nav>
+</header>
+
+<article>
+  <h1>Bienvenue dans mon restaurant</h1>
+  <p>
+    <img
+      src="https://www.toulouscope.fr/wp-content/uploads/2016/05/10871-11038014-975117875865100-6996763706854362029-n.jpg"
+      alt="Mon restaurant"
+    />
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+</article>
+
+<article id="presentation">
+  <h2>Présentation</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+</article>
+
+<article id="menu">
+  <h2>Menu</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+
+  <h3>Les entrées</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+
+  <h3>Les plats</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+
+  <h3>Les Desserts</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+</article>
+
+<article id="map">
+  <h2>Ou sommes nous ?</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4085.832251505685!2d1.4315433276057394!3d43.6040494123757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb67cc269537%3A0x87156dceb798679e!2sRestaurant%20Michel%20Sarran!5e0!3m2!1sen!2sfr!4v1639481852864!5m2!1sen!2sfr"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
+</article>
+
+<article id="contact">
+  <h2>Nous contacter</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum,
+    consectetur totam accusamus quisquam laboriosam cupiditate commodi qui harum
+    delectus ullam sunt blanditiis ea quia ipsam libero! Laboriosam, nisi eius!
+  </p>
+
+  <h3>Adresse</h3>
+  <p>21 Bd Armand Duportal, 31000 Toulouse</p>
+
+  <h3>Téléphone</h3>
+  <p>05 51 12 32 32</p>
+
+  <h3>Nous envoyer un message</h3>
+  <form>
+    <div>
+      <label for="username">Votre nom et prénom :</label>
+      <input type="text" id="username" />
+    </div>
+    <div>
+      <label for="email">Vore email :</label>
+      <input type="text" id="username" />
+    </div>
+    <div>
+      <label for="contenue">Votre message :</label>
+      <textarea id="contenue"></textarea>
+    </div>
+    <div>
+      <button>Envoyer le message</button>
+    </div>
+  </form>
+</article>
+
+<footer>
+  <p>Mon Restaurant - 21 Bd Armand Duportal, 31000 Toulouse - 05 51 12 32 32</p>
+</footer>
+```
+
+### Exercice 2 - Centrer les titre
+
+Gràce à la régle CSS `text-align` center les titres
+h1 et h2
+
+### Exercice 3 - Titre principal
+
+1. Gràce à la régle `font-family`, changer la police
+   d'écriture de `h1` en `"Arial Rounded MT"` ou `"Times New Roman"`
+2. Gràce à la régle `font-size` changer la taille de
+   la police par `34px`
+
+### Exercice 4 - Centrer avec une classe
+
+1. Dans la première balise article ajouter la class
+   css : `centrer`
+2. Dans la feuille de style ajouter la class `.centrer`
+   avec la régle css: `text-align: center`
+
+### Exercice 5 - Le footer
+
+1. Ajouter à la balise footer la class "centrer"
+2. Gràce à la régle `font-style` mettre le text
+   du footer en italic !
+
+### Exercice 6 - Le menu
+
+1. Grace au propriétés css `font-weight`, `text-decoration` et `color` mettre chaque
+   lien du menu en non souligné, gras et de couleur
+   grise
+
+### Exercice 7 - Couleurs
+
+1. Gràce à la régle css `background-color` et `color`,
+   changer la couleur de fond de toute la page
+   en `#FCFAEE` et la couleur du texte en `#0B2027`
+2. Toujours avec les mémes régles css, changer la couleur
+   des liens du menu en `#49798C`
+3. Changer la couleur de fond du header et du footer en
+   `#0B2027` et la couleur du texte du header en `#FCFAEE`
+4. Changer la couleur de fond du l'article avec l'id
+   menu en `#40798C`
+5. Changer la couleur de fond de l'article avec l'id
+   map en `#70A9A1`

@@ -1,0 +1,55 @@
+h1 {
+  /*
+  la règle "font-family": Permet de choisir la police d'écriture
+   */
+  font-family: "Times New Roman", "Arial";
+
+  /*
+  la règle "font-weight": determine si la police doit grasse ou non
+   */
+  font-weight: normal;
+
+  /*
+  la règle "font-size": Détermine la taille de la police
+   */
+  font-size: 40px;
+
+  /*
+  la règle "font-style": détermine si police doit être italique ou non
+   */
+  font-style: italic;
+}
+
+p {
+  color: green;
+}
+
+h1 {
+  color: red;
+}
+
+header {
+  background-color: blue;
+}
+
+h1,
+h2 {
+  background-color: darkgrey;
+}
+
+.tresGrand {
+  font-size: 60px;
+}
+
+.textred {
+  color: red;
+}
+
+.textblue {
+  color: blue;
+}
+
+.textblue,
+.textred {
+  font-size: 25px;
+}
