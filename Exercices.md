@@ -290,7 +290,8 @@ h1 et h2
 
 ### Exercice 6 - Le menu
 
-1. Grace au propriétés css `font-weight`, `text-decoration` et `color` mettre chaque
+1. Grace au propriétés css `font-weight`,
+   `text-decoration` et `color` mettre chaque
    lien du menu en non souligné, gras et de couleur
    grise
 
