@@ -1,3 +1,140 @@
+body {
+  /*
+  La règle display permet de changer le type d'élément
+  que nous voulons.
+  ex: display: block; => L'élément sera une boite
+  ex: display: inline; => L'élément sera du texte
+  */
+  display: block;
+
+  /*
+  La régle margin, permet de changer les marges
+  éxtérieur de notre block
+  */
+  margin: 10px;
+  /* En donnant 2 valeur à margin, nous spécifions
+  la marge à droite et à gauche en premier ensuite
+  la marge en haut et en bas en second */
+  margin: 5px 20px;
+  /* En donnant 4 valeurs à margin nous pouvons
+  spécifier les valeurs suivantes : En haut, à droite,
+  en base et à gauche */
+  margin: 10px 15px 5px 20px;
+  /*
+  Nous pouvons aussi décliner la propriété margin
+  en 4 sous propriétés :
+  */
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-left: 25px;
+
+  /*
+  Nous pouvons facilement spécifier une bordure en
+  utilisant la propriété css "border". On lui spécifie
+  dans l'ordre :
+  1. La taille de la bordure (5px)
+  2. Le type de bordure (solid pour une bordure pleine,
+  dashed pour une bordure en pointillé)
+  3. La couleur de la bordure
+  */
+  border: 5px solid #0b2027;
+  /*
+  Nous pouvons aussi décliner la propriété border en
+  plusieurs sous propriété
+  */
+  border-top: 10px dashed red;
+  border-right: 5px solid blue;
+  border-bottom: 15px solid green;
+  border-left: 3px solid gray;
+  /*
+  Nous pouvons arrondir les angles de nos bordures
+  */
+  border-radius: 100px;
+  /*
+  Nous pouvons décliner la propriété border radius
+  */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 50px;
+
+  /*
+  Nous pouvons personaliser les marges intérieur
+  en utilisant la propriété padding
+  */
+  padding: 40px;
+  padding: 10px 40px;
+  padding: 5px 50px 40px 12px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 15px;
+
+  /*
+  Nous pouvons changer la largeur et la hauteur
+  d'un block en utilisant les propriétés
+  width (largeur) et height (hauteur)
+  */
+  width: 300px;
+  height: 500px;
+  max-width: 300px;
+  min-width: 200px;
+  max-height: 300px;
+  min-height: 200px;
+
+  /*
+  La proprété CSS overflow permet de gérer le comportement
+  de ce qui dépasse d'un block
+  overflow: hidden => Tout ce qui dépasse sera dissimulé
+  overflow: scroll => Tout ce qui dépasse pourrat être
+                      scrollé
+  */
+  overflow: scroll;
+
+  /*
+  En css il éxiste plusieurs unité de mesure :
+  1. Le pixel (px)
+  2. Les pourcentage (%)
+  3. La taille par rapport à la largeur l'écran (vw)
+  4. La taille par rapport à la hauteur l'écran (vh)
+  */
+  width: 80%;
+  width: 50vw;
+  height: 80vh;
+  width: 100%;
+  height: auto;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  /*
+  En css il existe différent positionement que nous
+  pouvons choisir grace à la propriété position.
+  Il éxiste 3 positionement :
+  1. La position relative (c'est le positionement
+  de base, chaque élément se positionne en dessous
+  du précédent)
+  2. La position absolute (la boite se positionne
+  par raport à son parent)
+  3. La position fixed (la boite se positionne par
+  rapport à l'écran)
+  */
+  position: relative;
+
+  /*
+  On vas pouvoir retoucher la position de notre élément
+  grace 4 propriété CSS:
+  1. top (position par rapport au haut)
+  2. right (position pas rapport à la droite)
+  3. bottom (position par rapport au bas)
+  4. left (position par rapport à la gauche)
+  */
+  top: 10px;
+}
+
 h1,
 h2 {
   text-align: center;
