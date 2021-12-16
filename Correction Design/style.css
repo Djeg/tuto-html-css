@@ -1,0 +1,175 @@
+body,
+html {
+  /* On supprime les marges */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /*
+  On définie une couleur de fond grâce à la propriété
+  "background-color"
+  */
+  background-color: #1c1d21;
+
+  /*
+  On définie une hauteur minimum pour notre header
+  */
+  min-height: 100px;
+
+  /* Afin d'éviter que le header se décolle de notre
+  page à cause des marges du cercle, nous définissons
+  un padding top à 1 */
+  padding-top: 1px;
+
+  position: relative;
+}
+
+.contenu {
+  /* La couleur de fond */
+  background-color: #f8f1f2;
+
+  /* Une hauteur minimum */
+  min-height: 60vh;
+
+  /* ajout d'une marge intérieur en haut
+  pour que mon contenu reste collé à mon
+  header */
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+footer {
+  /* la couleur de fond */
+  background-color: #1c1d21;
+
+  /* une hauteur minimum */
+  min-height: 40vh;
+
+  /* On place le footer en relative pour que
+  les block absolute à l'intérieur du footer
+  se place par rapport au footer */
+  position: relative;
+}
+
+.vignette {
+  /* Couleur de fond */
+  background-color: #ccbcbc;
+
+  /* Ajout d'une bordure */
+  border: 2px solid #1c1d21;
+
+  /* Arrondissement des coins */
+  border-radius: 10px;
+
+  /* ajout de marge é xtérieurs */
+  margin: 12px 30px;
+
+  /* ajout de marge intérieur */
+  padding: 10px;
+
+  /* une hauteur minimum */
+  min-height: 140px;
+
+  /* on ajoute la position relative pour que les
+  block absolue se place par rapport à la vignette */
+  position: relative;
+}
+
+.circle {
+  /* ajout d'une couleur de fond */
+  background-color: #ccbcbc;
+
+  /* on fix la largeur et la hauteur*/
+  width: 50px;
+  height: 50px;
+
+  /* pour faire l'arrondie nous arrondissant les
+  angles à fond ! */
+  border-radius: 100%;
+
+  /* ajout d'une bordure */
+  border: 5px solid #a288a6;
+}
+
+/* On personalise le cercle uniquement à l'intérieur
+du header ! */
+header .circle {
+  /* On ajoutes de marges éxtérieurs */
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+/* On personalise le cercle uniquement à l'intérieur du
+footer ! */
+footer .circle {
+  /* On utilise la position absolute */
+  position: absolute;
+  /* On place le cercle en bas à droite */
+  bottom: 15px;
+  right: 15px;
+}
+
+.sous-vignette {
+  /* la couleur de fond */
+  background-color: #bb9bb0;
+
+  /* la hauteur minimum */
+  min-height: 100px;
+
+  /* arrondissement des coins */
+  border-radius: 5px;
+
+  /* marges éxtérieur */
+  margin: 5px;
+
+  /* marges intérieur */
+  padding: 5px;
+}
+
+.square {
+  /* couleur de fond */
+  background-color: #f8f1f2;
+
+  /* ajout d'une bordure */
+  border: 1px solid #a288a6;
+
+  /* ajout d'une hauteur et largeur */
+  width: 40px;
+  height: 40px;
+
+  /* ajout d'un arrondissement de bord */
+  border-radius: 5px;
+}
+
+/* On ajoute un régle pour les "square" à l'intérieur
+des vignettes */
+.vignette .square {
+  /* on positionne le carret en bas à droite */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.green-square {
+  /* coouleur de fond */
+  background-color: #ccbcbc;
+
+  /* Ajout d'une taille minimum */
+  min-width: 60px;
+  min-height: 60px;
+}
+
+header .green-square {
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+footer .green-square {
+  position: absolute;
+  height: 100%;
+  width: 70%;
+}
