@@ -1,0 +1,215 @@
+/*
+Enlévement des marges sur le body et le html
+*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Utiliser un positionement flexible pour le body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*
+Style de l'en tête
+*/
+header {
+  background-color: #2c3e50;
+  min-height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  padding-right: 45px;
+}
+header .menu a {
+  color: rgba(255, 255, 255, 0.67);
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  padding: 0px 15px;
+  align-items: center;
+}
+header .menu a:first-child {
+  padding-left: 0;
+}
+header .menu a:last-child {
+  padding-right: 0;
+}
+header .menu a.active {
+  color: white;
+  font-weight: bold;
+}
+
+/*
+Style du contenu
+*/
+
+.content {
+  background-color: #f5f5f5;
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column {
+  padding-left: 64px;
+  padding-top: 15px;
+  min-width: 250px;
+}
+.main-column {
+  padding: 0px 10px;
+  padding-top: 15px;
+  flex-grow: 2;
+}
+.right-column {
+  padding-right: 64px;
+  padding-top: 15px;
+  min-width: 100px;
+  max-width: 270px;
+}
+
+.left-column .menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+}
+
+.left-column .item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0px;
+  color: rgba(0, 0, 0, 0.67);
+  text-decoration: none;
+}
+
+.left-column .item i {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  width: 20px;
+}
+
+.left-column .item p {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.left-column .item.active {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid #dbdbdb;
+}
+
+/*
+Style d'une "card"
+*/
+.card {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+.card-header {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+.card-header-profile-picture {
+  margin-right: 15px;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.card-header-profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-header-pseudo {
+  display: flex;
+  flex-direction: column;
+}
+.card-header-pseudo .username {
+  margin: 0;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.card-header-pseudo .time {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+}
+.card-cover {
+  width: 100%;
+  position: relative;
+  min-height: 300px;
+}
+.card-cover img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 10px 15px;
+}
+.card-content p {
+  margin: 10px 0px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbfbfb;
+  padding: 10px 15px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.card-footer-widget {
+  display: flex;
+  align-items: center;
+}
+.card-footer-widget i {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  color: #bdbdbd;
+}
+.card-footer-widget p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #bdbdbd;
+}
+
+.main-column .card {
+  margin-bottom: 15px;
+}
+
+/*
+La colone de droite
+/* */ */

@@ -7,15 +7,9 @@ html {
 
 header {
   /*
-  On définie une couleur de fond grâce à la propriété
-  "background-color"
-  */
-  background-color: #1c1d21;
-
-  /*
   On définie une hauteur minimum pour notre header
   */
-  min-height: 100px;
+  min-height: 724px;
 
   /* Afin d'éviter que le header se décolle de notre
   page à cause des marges du cercle, nous définissons
@@ -23,6 +17,27 @@ header {
   padding-top: 1px;
 
   position: relative;
+
+  /* Ajout d'une image de fond. Nous pouvons
+  aussi utiliser "linear-gradient" pour faire des
+  dégrader de couleur */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url("images/paysage.jpg");
+
+  /* Permet de maitriser la répétion de notre background
+  image */
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+
+  /* permet de définir la position de notre image de fond */
+  background-position: center;
+
+  /* permet de définir la taille de notre image de fond
+  à l'intérieur de notre header (sensiblement la même
+  chose que le object-fit) */
+  background-size: cover;
+
+  background-attachment: fixed;
 }
 
 .contenu {
@@ -172,4 +187,43 @@ footer .green-square {
   position: absolute;
   height: 100%;
   width: 70%;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+
+  /* Permet de dissimuler tout ce qui sort du block */
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  /* object-fit permet de définir comment un image
+  doit être remplie dans son block.
+  1. fill: L'image sera déformé pour remplir complétement
+  le block
+  2. contain: L'image respéctera son ratio et se redimensionnera
+  pour être contenu dans son block
+  3. cover: L'image remplira le block sans se redimensionné
+  */
+  object-fit: cover;
+}
+
+.second {
+  /* Ma seconde vignette utilise un positionement "flexible"
+  pour ces enfant */
+  display: flex;
+
+  /* Nous pouvons determiné le comportement des enfants
+  qui dépace du block */
+  flex-wrap: wrap;
+
+  /* Nous pouvons facilement centrer les boites */
+  justify-content: flex-start;
+}
+
+.second .sous-vignette {
+  min-width: 200px;
 }
